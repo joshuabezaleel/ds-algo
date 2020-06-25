@@ -5,6 +5,7 @@ import (
 
 	dll "github.com/joshuabezaleel/ds-algo/concepts/doubly-linked-list"
 	sll "github.com/joshuabezaleel/ds-algo/concepts/singly-linked-list"
+	stck "github.com/joshuabezaleel/ds-algo/concepts/stack"
 )
 
 func main() {
@@ -29,4 +30,13 @@ func main() {
 	fmt.Println()
 	singlyLinkedList.Append(6)
 	singlyLinkedList.Print()
+	fmt.Println()
+
+	fmt.Println("=== STACK ===")
+	stack := stck.NewStack()
+	stack.Push(5)
+	stack.Push(3)
+	stack.Push(8)
+	stack.Push(4)
+	stack.Print()
 }
