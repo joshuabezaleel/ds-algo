@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 
+	bt "github.com/joshuabezaleel/ds-algo/concepts/ds/binary-tree"
 	dll "github.com/joshuabezaleel/ds-algo/concepts/ds/doubly-linked-list"
 	queue "github.com/joshuabezaleel/ds-algo/concepts/ds/queue"
 	sll "github.com/joshuabezaleel/ds-algo/concepts/ds/singly-linked-list"
@@ -51,4 +52,18 @@ func main() {
 	fmt.Println()
 	fmt.Printf("Dequeue = %v\n", q.Dequeue())
 	q.Print()
+	fmt.Println()
+
+	fmt.Println("=== BINARY TREE ===")
+	bt := bt.NewBinaryTree()
+	bt.Insert(5)
+	bt.Insert(3)
+	bt.Insert(8)
+	bt.Insert(4)
+	bt.PreOrderPrint()
+	fmt.Println()
+	bt.InOrderPrint()
+	fmt.Println()
+	bt.PostOrderPrint()
+	fmt.Println()
 }
