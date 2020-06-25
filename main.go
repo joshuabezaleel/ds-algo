@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	dll "github.com/joshuabezaleel/ds-algo/concepts/doubly-linked-list"
-	sll "github.com/joshuabezaleel/ds-algo/concepts/singly-linked-list"
-	stck "github.com/joshuabezaleel/ds-algo/concepts/stack"
+	dll "github.com/joshuabezaleel/ds-algo/concepts/ds/doubly-linked-list"
+	sll "github.com/joshuabezaleel/ds-algo/concepts/ds/singly-linked-list"
+	stck "github.com/joshuabezaleel/ds-algo/concepts/ds/stack"
 )
 
 func main() {
