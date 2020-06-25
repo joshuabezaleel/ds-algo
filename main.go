@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	dll "github.com/joshuabezaleel/ds-algo/concepts/ds/doubly-linked-list"
+	queue "github.com/joshuabezaleel/ds-algo/concepts/ds/queue"
 	sll "github.com/joshuabezaleel/ds-algo/concepts/ds/singly-linked-list"
 	stck "github.com/joshuabezaleel/ds-algo/concepts/ds/stack"
 )
@@ -39,4 +40,15 @@ func main() {
 	stack.Push(8)
 	stack.Push(4)
 	stack.Print()
+
+	fmt.Println("=== QUEUE ===")
+	q := queue.NewQueue()
+	q.Enqueue(5)
+	q.Enqueue(3)
+	q.Enqueue(8)
+	q.Enqueue(4)
+	q.Print()
+	fmt.Println()
+	fmt.Printf("Dequeue = %v\n", q.Dequeue())
+	q.Print()
 }
